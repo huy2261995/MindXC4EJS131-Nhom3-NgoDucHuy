@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset style="width: fit-content">
+        <legend>CV</legend>
+        <lable for="name"><b>Name</b></lable
+        ><br />
+        <input
+          type="text"
+          id="ten"
+          name="name"
+          placeholder="Nguyen Anh"
+        /><br />
+        <lable for="age"><b>Age</b></lable
+        ><br />
+        <input
+          type="number"
+          id="age"
+          min="0"
+          max="150"
+          placeholder="10"
+        /><br />
+        <lable for="email"><b>Email</b></lable
+        ><br />
+        <input type="email" id="email" placeholder="example@gmail.com" /><br />
+        <lable for=" birtday"><b>Birthday</b></lable
+        ><br />
+        <input type="date" id="birthday" placeholder="mm/dd/yy" /><br />
+        <lable for="favcolor"><b>Favorite Color</b></lable
+        ><br />
+        <input type="color" id="favcolor" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br /><br />
+    <table style="width: 50%">
+      <tr>
+        <th>STT</th>
+        <th>Môn</th>
+        <th>Thời gian</th>
+        <th>Giáo Viên</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Toán</td>
+        <td>7:50</td>
+        <td>Anh</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Văn</td>
+        <td>8:50</td>
+        <td>Nam</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Đạo đức</td>
+        <td>9:50</td>
+        <td>Thảo</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Sinh</td>
+        <td>10:50</td>
+        <td>Huyền</td>
+      </tr>
+    </table>
+  </body>
+</html>
