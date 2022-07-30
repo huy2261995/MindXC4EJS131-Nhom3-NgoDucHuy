@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    th, td {padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 20px;}
+  .header{text-align: center;}
+  .khung {
+    border-style: solid;
+    border-color: black;
+    padding: 05px;
+    margin: 30px;
+    width: 50%;
+    border-width: 5px;}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin đi Hải Phòng</title>
+</head>
+<body>
+    <div class="khung">
+<div class="header"><h1>Bảng Đăng Ký Tour</h1>
+<p>Đây là form đăng ký thông tin cá nhân tham gia tour Hải Phòng 2 ngày 1 đêm do công ty TNHH XXX tạo ra cho cán bộ nhân viên</p></div>
+<div><hr>
+<form>
+    <label for="name" style="font-size: 25px;"><b>Họ và tên:</b></label><br><br>
+    <input type="text" id="name" name="hoten"><br><br>
+    <label for="msnv" style="font-size: 25px;"><b>Mã số nhân viên:</b></label><br><br>
+    <input type="number" id="code" name="masonv"min="1000" max="9999"><br><br>
+    <label for="phongban" style="font-size: 25px;"><b>Phòng ban:</b></label><br><br>
+    <input type="text" id="phongban" name="Phongban"><br><br>
+    <label for="chucvu"style="font-size: 25px;"><b>Chức vụ:</b></label><br><br>
+    <input type="text" id="Chucvu" name="chucvu"><br><br>
+    <p style="font-size: 25px;"><b>Số năm làm việc tại công ty</b></p>
+    <p><i>Số năm làm việc sẽ quyết định chi phí hỗ trợ của công ty cho các CBNV như bảng dưới</i></p>
+    <table style="width:60%">
+        <tr>
+          <th>Chưa đủ 1 năm làm việc</th>
+          <th>Đủ 1 năm làm việc trở lên</th>
+        </tr>
+        <tr>
+          <td>Hỗ trợ 50% chi phí</td>
+          <td>Hỗ trợ 100% chi phí</td>
+        </tr>
+      </table><br>
+    <input type="radio" id="chuadu" name="kinhnghiem" value="chuadu">
+    <label for="chuadu"><b>Chưa đủ 1 năm</b></label>
+    <input type="radio" id="dadu" name="kinhnghiem" value="dadu">
+    <label for="dadu"><b>Đã đủ 1 năm</b></label><br><br>
+    <label for="thamgia"style="font-size: 25px;"><b>Có tham gia tour không?</b></label><br><br>
+  <select name="thamgia" id="tg" style="width:800px;height:30px">
+    <option value="Co">Có</option>
+    <option value="Khong">Không</option>
+  </select><br><br><hr>
+      <div class="header"><input type="submit" value="Hoàn tất" style="height:50px; width:500px;"></div>
+  </form>
+</div>
+</body>
+</html>
