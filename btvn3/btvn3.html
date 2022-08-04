@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./btvn3.css" />
   </head>
   <body>
-    <audio autoplay><source src="demo.mp3" type="audio/mpeg" /></audio>
     <div id="khungngoai">
       <h3>Reading List</h3>
       <p class="text1">(required,<span class="text2">optional</span>)</p>
@@ -28,6 +27,24 @@
           <li class="text2">Amy Lowell, <i>Lilacs</i></li>
         </ul>
       </div>
+      <div class="flex-parent jc-center">
+        <button class="music-button button1" onclick="PlayStop()" type="button">
+          Ấn vào đây nghe/dừng nhạc!!!
+        </button>
+  
+        <audio id="audioID" autoplay loop>
+          <source src="demo.mp3" type="audio/mp3" />
+        </audio>
+  
+        <script>
+          var myaudio = document.getElementById("audioID");
+  
+          function PlayStop() {
+            return myaudio.paused ? myaudio.play() : myaudio.pause();
+          }
+        </script>
+      </div>
     </div>
+   
   </body>
 </html>

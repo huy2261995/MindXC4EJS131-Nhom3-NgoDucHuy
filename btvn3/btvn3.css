@@ -1,37 +1,75 @@
- body {
-    font-family: Helvetica;
-    cursor: url(ani1227.cur), auto;
-  }
-  .textheader {
-    font-weight: lighter;
-    color: blue;
-    font-size: 20px;
-  }
-  .text1 {
-    text-align: center;
-  }
-  .text2 {
-    color: red;
-  }
-  #khungngoai {
-    border: 7px solid black;
-    padding: 20px;
-    margin: 50px 100px;
-    width: 30%;
-    background-color: palegreen;
-    box-shadow: 20px 20px lightblue;
-  }
-  .khungtrong {
-    border: 2px double purple;
-    padding: 20px;
-    margin: 20px 30px;
-    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/304/595/small_2x/white-and-silver-color-background-with-dynamic-diagonal-stripe-lines-and-halftone-texture-modern-and-simple-gray-color-template-banner-design-luxury-and-elegant-concept-eps10-vector.jpg);
-    font-size: 17px;
-  }
-  h3 {
-    text-align: center;
-    color: orangered;
-    font-size: 50px;
-    margin: 10px;
-  }
-  
+* {
+  font-family: Helvetica;
+  cursor: url(1.png), auto;
+}
+body {
+  background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoZHdNVtkb3MMTC3fOCvvtyCX9djHTHT8IWpVuueXCprRS6DCfakyZMba5y_77FzRq682EnPC0O3YlWEoNhOMUjpbUJOmbMPvFPFgbYF-L-Hka1YnbZmWetqX34HM2cMa4PCD3jNAwhjbXprC0viDSUQsXqaGZwbI4rwfpjPXCFkb1qMyr-7dSdewVOA/s3840/anya-forger-spy-x-family-4k-wallpaper-uhdpaper.com-506@1@g.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.textheader {
+  font-weight: lighter;
+  color: blue;
+  font-size: 20px;
+}
+.text1 {
+  text-align: center;
+}
+.text2 {
+  color: red;
+}
+#khungngoai {
+  border: 7px solid black;
+  padding: 20px;
+  margin: 50px 100px;
+  width: 30%;
+  background-color: palegreen;
+  box-shadow: 20px 20px rgb(223, 184, 223);
+  max-width: 500px;
+  margin: auto;
+  background-image: url(https://img.freepik.com/premium-vector/galaxy-fantasy-background-with-pastel-color_38409-1774.jpg?w=2000);
+}
+.khungtrong {
+  border: 2px double purple;
+  padding: 20px;
+  margin: 20px 30px;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/304/595/small_2x/white-and-silver-color-background-with-dynamic-diagonal-stripe-lines-and-halftone-texture-modern-and-simple-gray-color-template-banner-design-luxury-and-elegant-concept-eps10-vector.jpg);
+  font-size: 17px;
+}
+h3 {
+  text-align: center;
+  color: orangered;
+  font-size: 50px;
+  margin: 10px;
+}
+.music-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: url(2.png), pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+}
+
+.button1:hover {
+  background-color: #4caf50;
+  color: white;
+}
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
