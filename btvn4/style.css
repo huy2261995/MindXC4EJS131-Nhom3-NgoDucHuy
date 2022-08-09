@@ -66,9 +66,11 @@ i {
   margin-bottom: -3px;
 }
 
-.box {
+.boxteststicky {
   background-color: brown;
   width: auto;
   height: 1800px;
   border: 3px blue solid;
+  text-align: center;
+  padding: 50%;
 }
