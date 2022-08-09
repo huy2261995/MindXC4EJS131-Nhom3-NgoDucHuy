@@ -39,11 +39,11 @@ body {
 h3 {
   text-align: center;
   color: orangered;
-  font-size: 50px;
+  font-size: 50px; 
   margin: 10px;
 }
 .music-button {
-  background-color: #af4c61; 
+  background-color: #af4c61;
   border: none;
   color: white;
   padding: 16px 32px;

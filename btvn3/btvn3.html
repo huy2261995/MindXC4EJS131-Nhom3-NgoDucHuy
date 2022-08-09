@@ -31,20 +31,19 @@
         <button class="music-button button1" onclick="PlayStop()" type="button">
           Ấn vào đây nghe/dừng nhạc!!!
         </button>
-  
+
         <audio id="audioID" autoplay loop>
           <source src="demo.mp3" type="audio/mp3" />
         </audio>
-  
+
         <script>
           var myaudio = document.getElementById("audioID");
-  
+
           function PlayStop() {
             return myaudio.paused ? myaudio.play() : myaudio.pause();
           }
         </script>
       </div>
     </div>
-   
   </body>
 </html>
