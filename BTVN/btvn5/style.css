@@ -170,7 +170,7 @@ h2 {
 }
 .marked {
   color: #fff;
-  transition: color 0.3s ease-out;
+  transition: color 0.3s;
 }
 .project-text:hover .marked {
   color: #ff7f50;

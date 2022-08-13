@@ -5,7 +5,9 @@
 body {
   background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoZHdNVtkb3MMTC3fOCvvtyCX9djHTHT8IWpVuueXCprRS6DCfakyZMba5y_77FzRq682EnPC0O3YlWEoNhOMUjpbUJOmbMPvFPFgbYF-L-Hka1YnbZmWetqX34HM2cMa4PCD3jNAwhjbXprC0viDSUQsXqaGZwbI4rwfpjPXCFkb1qMyr-7dSdewVOA/s3840/anya-forger-spy-x-family-4k-wallpaper-uhdpaper.com-506@1@g.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: center;
+
 }
 .textheader {
   font-weight: lighter;
