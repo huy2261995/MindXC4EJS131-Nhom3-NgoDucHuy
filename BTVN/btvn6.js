@@ -6,14 +6,12 @@ let text1 = text.charAt(0).toLowerCase();
 let text2 = text.charAt(8).toUpperCase(); 
 let text3 = text.slice(1, 8); 
 let text4 = text.slice(9, 18); 
-let cau1 = text1.concat(text3, text2, text4);
-console.log(cau1);
+console.log(text1.concat(text3, text2, text4));
 
 // hômnay ngày thứ 8
 let text5 = text.slice(1, 3);
 let text6 = text.slice(4, 17);
-let cau2 = text1.concat(text5, text6, "8");
-console.log(cau2);
+console.log(text1.concat(text5, text6, "8"));
 
 
 //BT Thầy Hiếu
