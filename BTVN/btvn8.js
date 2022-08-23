@@ -30,6 +30,8 @@ console.log("Kết quả", arrE);
 const arrF = [1, 23, 41, 5, 6, 1, 14, 66, 1124, 1, 1, 55, 15, 0];
 let timx = arrF.lastIndexOf(1);
 console.log("Vị trí thứ 4 của số 1 trong mảng:", timx);
+
+//Đang Tìm cách làm với findIndex
 /*let result = arrF.findIndex(function (element, index) {
   return element == 1 && index > 4;
-});*/ //Đang Tìm cách làm với findIndex
+});*/
