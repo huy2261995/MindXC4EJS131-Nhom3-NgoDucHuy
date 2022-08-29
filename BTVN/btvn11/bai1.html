@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 1</title>
+  </head>
+  <body id="body">
+    <button id="body" onclick="changeColor();">Change Color</button>
+    <script>
+      let colors = [
+        "red",
+        "blue",
+        "green",
+        "pink",
+        "orange",
+        "black",
+        "silver",
+        "gray",
+        "white",
+        "maroon",
+        "yellow",
+        "navy",
+        "aquamarine",
+        "blueviolet",
+      ];
+      let colorIndex = 0;
+      function changeColor() {
+        var col = document.getElementById("body");
+        if (colorIndex >= colors.length) {
+          colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+      }
+    </script>
+  </body>
+</html>
