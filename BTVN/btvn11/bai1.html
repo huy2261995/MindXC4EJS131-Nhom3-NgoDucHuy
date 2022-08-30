@@ -25,14 +25,14 @@
         "aquamarine",
         "blueviolet",
       ];
-      let colorIndex = 0;
+      let i = 0;
       function changeColor() {
         let col = document.getElementById("body");
-        if (colorIndex >= colors.length) {
-          colorIndex = 0;
+        if (i >= colors.length) {
+          i = 0;
         }
-        col.style.backgroundColor = colors[colorIndex];
-        colorIndex++;
+        col.style.backgroundColor = colors[i];
+        i++;
       }
     </script>
   </body>
