@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bài tập 2</title>
     <style>
-      .btn {
+      .style {
         font-size: 24px;
         text-align: center;
         width: 96px;
@@ -15,11 +15,11 @@
     </style>
   </head>
   <body>
-    <button id="a" class="btn">0</button>
+    <button id="btn" class="style">0</button>
 
     <script>
-      var number = document.getElementById("a");
-      var count = 0;
+      let number = document.getElementById("btn");
+      let count = 0;
 
       number.onclick = function () {
         count += 1;
