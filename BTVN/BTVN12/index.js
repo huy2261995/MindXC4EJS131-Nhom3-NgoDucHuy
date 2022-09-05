@@ -18,15 +18,15 @@ for (item of document.getElementsByTagName("li")) {
 }
 // Click để add Item vào list
 function addAnListItem() {
-  let addInput = document.getElementById("addInput");
-  if (addInput.value === "") {
+  let add = document.getElementById("addInput");
+  if (add.value === "") {
     alert("Xin hãy nhập tên sách");
   } else {
-    let myUL = document.querySelector("ul");
-    let newBook = document.createElement("li");
-    newBook.innerText = addInput.value;
-    myUL.appendChild(newBook);
-    createDeleteBtn(newBook);
+    let UL = document.querySelector("ul");
+    let newItems = document.createElement("li");
+    newItems.innerText = addInput.value;
+    UL.appendChild(newItems);
+    createDeleteBtn(newItems);
   }
 }
 
