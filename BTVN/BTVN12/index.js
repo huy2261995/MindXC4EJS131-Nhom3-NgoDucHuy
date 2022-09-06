@@ -20,13 +20,14 @@ for (item of document.getElementsByTagName("li")) {
 function addAnListItem() {
   let add = document.getElementById("addInput");
   if (add.value === "") {
-    alert("Xin hãy nhập tên sách");
+    alert("Error");
   } else {
     let UL = document.querySelector("ul");
     let newItems = document.createElement("li");
     newItems.innerText = addInput.value;
     UL.appendChild(newItems);
     createDeleteBtn(newItems);
+    add.value = "";
   }
 }
 
@@ -36,10 +37,10 @@ document.getElementById("search").onkeyup = function () {
 };
 function searchList(value) {
   for (key of document.getElementsByTagName("li")) {
-    let keyTxt = removeVNese(key.innerText.toLowerCase());
-    let valueTxt = removeVNese(value.toLowerCase());
+    let keyText = removeVNese(key.innerText);
+    let valueText = removeVNese(value);
 
-    if (keyTxt.includes(valueTxt)) {
+    if (keyText.includes(valueText)) {
       key.style.display = "flex";
     } else {
       key.style.display = "none";
