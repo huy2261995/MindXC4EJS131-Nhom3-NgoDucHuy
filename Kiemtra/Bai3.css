@@ -1,0 +1,134 @@
+* {
+  font-family: "Merriweather";
+}
+body {
+  background: #e6eaf8;
+  width: 1600px;
+  height: 1200px;
+}
+.insideBox {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  gap: 70px;
+  position: absolute;
+  width: 1300px;
+  height: 830px;
+  margin-left: 193px;
+  margin-top: 173px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+}
+.navbar {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 1300px;
+  height: 64px;
+  margin: 0;
+}
+.search {
+  display: flex;
+  width: 30%;
+  height: 64px;
+  border: solid 1px black;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+
+  padding-left: 10px;
+}
+.navicon {
+  width: 70%;
+  height: 64px;
+  display: flex;
+  justify-content: flex-end;
+}
+.icon {
+  display: flex;
+  width: 120px;
+  height: 64px;
+  margin-left: 30px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.icon:hover {
+  background-color: #849fff;
+  border-radius: 10px;
+  color: white;
+}
+
+.userNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.userBoard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+
+  width: 370px;
+  height: 208px;
+
+  background: #fbfcff;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.userBoard:hover {
+  background: #fbfcff;
+  border: 1px solid #bfc8e6;
+  box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+  border-radius: 16px;
+}
+.avatar {
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  margin: 0px;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 2px;
+  gap: 10px;
+  width: 200px;
+  height: 100px;
+}
+.minitags {
+  display: flex;
+  font-size: 18px;
+  border: 1px solid #bfc8e6;
+  border-radius: 10px;
+  width: fit-content;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #516fd4;
+  padding: 5px;
+}
