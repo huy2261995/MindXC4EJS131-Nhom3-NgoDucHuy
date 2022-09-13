@@ -3,14 +3,11 @@ function numberOneTriangle(n) {
     console.log("nhap i tu 1-10");
   } else {
     for (let i = 0; i < n; i++) {
-      if (i > 10) {
-        console.log("Vui long nhap so tu 1-10");
-      } else {
-        let output = "";
-        for (let k = 0; k <= i; k++) output += "*";
-        console.log(output);
-      }
+      let output = "";
+      for (let k = 0; k <= i; k++) output += "*";
+      console.log(output);
     }
   }
 }
+
 numberOneTriangle(3);
