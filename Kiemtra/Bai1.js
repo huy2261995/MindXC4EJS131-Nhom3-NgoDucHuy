@@ -11,14 +11,14 @@ function soNguyenTo() {
     alert("Số a phải nhỏ hơn số b");
   } else {
     for (let i = a; i <= b; i++) {
-      let flag = 0;
+      let check = 0;
       for (let j = 2; j < i; j++) {
         if (i % j == 0) {
-          flag = 1;
+          check = 1;
           break;
         }
       }
-      if (i > 1 && flag == 0) {
+      if (i > 1 && check == 0) {
         let resulDiv = document.querySelector(".rsDiv");
         let result = document.createElement("p");
 
