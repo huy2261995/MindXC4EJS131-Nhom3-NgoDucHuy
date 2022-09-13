@@ -4,7 +4,7 @@ function numberOneTriangle(n) {
   } else {
     for (let i = 0; i < n; i++) {
       if (i > 10) {
-        console.log("nhap i tu 1-10");
+        console.log("Vui long nhap so tu 1-10");
       } else {
         let output = "";
         for (let j = 0; j < n - i; j++) output += " ";
@@ -14,4 +14,4 @@ function numberOneTriangle(n) {
     }
   }
 }
-numberOneTriangle(10);
+numberOneTriangle(11);
