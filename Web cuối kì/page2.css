@@ -1,0 +1,203 @@
+body {
+  font-family: "Cuprum", sans-serif;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.danteLogo {
+  display: flex;
+  box-sizing: border-box;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  margin-left: 2%;
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-right: 3%;
+  list-style: none;
+}
+.items-menu-header {
+  text-decoration: none;
+  color: white;
+}
+.footer {
+  position: fixed;
+  top: 90%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.socialContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  box-sizing: border-box;
+  width: 8%;
+}
+.items-menu-footer {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  box-sizing: border-box;
+  width: 80%;
+}
+* {
+  box-sizing: border-box;
+}
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 100vh;
+}
+.image-page1 {
+  width: 100%;
+  height: 100vh;
+}
+/* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+  display: none;
+}
+/* thiết kế nút mũi tên*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* tạo hiệu ứng chuyển động fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro-content {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-content {
+  text-align: center;
+  width: 80vh;
+  align-self: center;
+  font-size: 1.5rem;
+}
