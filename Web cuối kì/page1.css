@@ -1,5 +1,7 @@
 body {
   font-family: "Cuprum", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .col-1 {
   width: 8.33%;
@@ -105,10 +107,7 @@ body {
   box-sizing: border-box;
   width: 80%;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-}
+
 .info-text {
   color: azure;
   margin-bottom: 100px;
@@ -127,4 +126,10 @@ body {
 }
 .pic {
   margin: 5px;
+}
+.videoFrame {
+  width: 100vw;
+  height: 120vh;
+  top: 0px;
+  left: 0px;
 }
