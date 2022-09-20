@@ -72,6 +72,7 @@ body {
   color: white;
   display: inline-block;
   position: relative;
+  font-size: 1.3rem;
 }
 .items-menu-header:after {
   content: "";
