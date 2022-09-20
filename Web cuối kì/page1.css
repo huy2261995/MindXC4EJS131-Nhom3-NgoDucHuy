@@ -154,6 +154,10 @@ body {
 .contributor {
   margin-right: 20px;
 }
+.contributor-text {
+  text-decoration: none;
+  color: blanchedalmond;
+}
 .info-text {
   color: azure;
   margin-bottom: 100px;
