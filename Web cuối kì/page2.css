@@ -70,6 +70,25 @@ body {
 .items-menu-header {
   text-decoration: none;
   color: white;
+  display: inline-block;
+  position: relative;
+}
+.items-menu-header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -10px;
+  background-color: white;
+  transform-origin: bottom;
+  transition: transform 0.2s ease-out;
+}
+.items-menu-header:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom;
 }
 .footer {
   position: fixed;
@@ -110,12 +129,12 @@ body {
 }
 /* thiết lập style cho slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  max-height: 100vh;
+  max-width: 100vmax;
+  max-height: 90vh;
 }
 .image-page1 {
-  width: 100%;
-  height: 100vh;
+  width: 100vmax;
+  height: 90vh;
 }
 /* ẩn hình ảnh cho phần tử slideshow */
 .mySlides {
