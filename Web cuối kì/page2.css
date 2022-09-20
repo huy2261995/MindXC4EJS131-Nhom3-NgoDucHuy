@@ -1,5 +1,7 @@
 body {
   font-family: "Cuprum", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .col-1 {
   width: 8.33%;
@@ -51,6 +53,7 @@ body {
   align-items: center;
   color: white;
 }
+
 .danteLogo {
   display: flex;
   box-sizing: border-box;
@@ -62,7 +65,7 @@ body {
 }
 .menu-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-sizing: border-box;
   margin-right: 3%;
   list-style: none;
@@ -73,6 +76,21 @@ body {
   display: inline-block;
   position: relative;
   font-size: 1.3rem;
+}
+.items-menu-header.isActive {
+  display: flex;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  width: 140%;
+  height: 100%;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  align-self: center;
+  justify-self: center;
+  box-sizing: border-box;
 }
 .items-menu-header:after {
   content: "";
@@ -93,49 +111,59 @@ body {
 }
 .footer {
   position: fixed;
-  top: 90%;
+  top: 95%;
   left: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 10%;
-  background-color: black;
+  height: 5vh;
+  background-color: rgb(20, 20, 20);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   color: white;
 }
 .socialContact {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
   box-sizing: border-box;
-  width: 8%;
+  width: 20%;
+  padding: 0;
 }
+
 .items-menu-footer {
+  margin-left: 20px;
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
 }
+.items-menu-footer:hover {
+  transform: scale(1.5);
+}
+
 .menu-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
   box-sizing: border-box;
   width: 80%;
 }
-* {
-  box-sizing: border-box;
+.contributor {
+  margin-right: 20px;
 }
+
 /* thiết lập style cho slideshow container */
 .slideshow-container {
-  max-width: 100vmax;
-  max-height: 90vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .image-page1 {
-  width: 100vmax;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
 }
 /* ẩn hình ảnh cho phần tử slideshow */
 .mySlides {
@@ -220,4 +248,44 @@ body {
   width: 80vh;
   align-self: center;
   font-size: 1.5rem;
+  color: aliceblue;
+}
+.intro-content-row {
+  display: flex;
+}
+.text-content-row {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50vh;
+  align-self: center;
+  font-size: 1.5rem;
+  color: aliceblue;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.border {
+  border-width: 10px;
+  border-style: double;
+}
+.image-content-row {
+  width: 50%;
+  height: 50vh;
+  overflow: hidden;
+}
+.imgshow {
+  display: flex;
+  justify-content: center;
+}
+.pic {
+  margin: 5px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
 }
