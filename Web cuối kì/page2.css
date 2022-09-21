@@ -298,5 +298,6 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
+  justify-content: center;
+  width: 80vw;
 }
