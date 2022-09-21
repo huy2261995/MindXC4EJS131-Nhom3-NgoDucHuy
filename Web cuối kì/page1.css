@@ -166,13 +166,19 @@ body {
   text-decoration: none;
   color: blanchedalmond;
 }
+.info {
+  display: flex;
+  justify-content: center;
+}
 .info-text {
+  display: flex;
   color: azure;
   margin-bottom: 100px;
   margin-top: 50px;
   font-size: 1.5rem;
-  width: 60vh;
-  margin-left: 35%;
+  width: 30vw;
+  justify-content: center;
+  flex-direction: column;
 }
 .imgshow {
   color: azure;
