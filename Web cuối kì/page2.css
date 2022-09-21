@@ -78,7 +78,7 @@ body {
   font-size: 1.3rem;
 }
 .items-menu-header.isActive {
-  display: flex;
+  /* display: flex;
   color: black;
   background-color: white;
   border-radius: 20px;
@@ -90,7 +90,15 @@ body {
   font-size: 1.4rem;
   align-self: center;
   justify-self: center;
-  box-sizing: content-box;
+  box-sizing: border-box; */
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 13px;
+  text-underline-position: above;
+}
+
+.items-menu-header.isActive:hover {
+  text-decoration: none;
 }
 .items-menu-header:after {
   content: "";
@@ -103,11 +111,11 @@ body {
   margin-bottom: -10px;
   background-color: white;
   transform-origin: bottom;
-  transition: transform 0.2s ease-out;
 }
 .items-menu-header:hover:after {
   transform: scaleX(1);
   transform-origin: bottom;
+  transition: transform 0.5s ease-out;
 }
 .footer {
   position: fixed;
