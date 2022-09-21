@@ -90,7 +90,7 @@ body {
   font-size: 1.4rem;
   align-self: center;
   justify-self: center;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 .items-menu-header:after {
   content: "";
