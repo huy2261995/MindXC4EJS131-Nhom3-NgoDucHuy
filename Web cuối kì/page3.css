@@ -166,35 +166,147 @@ body {
   text-decoration: none;
   color: blanchedalmond;
 }
-.info {
-  display: flex;
-  justify-content: center;
+/*page1*/
+* {
+  box-sizing: border-box;
 }
-.info-text {
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.image-page1 {
+  width: 100%;
+  height: 100vh;
+}
+/* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+  display: none;
+}
+/* thiết kế nút mũi tên*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* tạo hiệu ứng chuyển động fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page2 {
   display: flex;
-  color: azure;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-right: 5%;
   font-size: 1.5rem;
-  width: 30vw;
-  justify-content: center;
+}
+.paragraph-page2 {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
   line-height: 2rem;
+  margin-right: 5%;
 }
-.imgshow {
-  color: azure;
+.contact-page2 {
+  color: white;
+}
+.caffeDante-page2 {
+  color: rgb(43, 170, 43);
+}
+.image-page2 {
+  box-sizing: border-box;
+  height: auto;
+}
+.page3 {
+  margin-top: 5%;
+  background-image: url(DanteGmap.PNG);
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.row {
+.Gmap-button {
+  box-sizing: border-box;
+  width: 10%;
+  height: 5%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: black;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 3%;
 }
-.pic {
-  margin: 5px;
-}
-.videoFrame {
-  width: 100vw;
-  height: 120vh;
-  top: 0px;
-  left: 0px;
+.Gmap-button:hover {
+  color: black;
+  background-color: white;
 }

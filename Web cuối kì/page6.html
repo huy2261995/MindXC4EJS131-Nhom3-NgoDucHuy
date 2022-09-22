@@ -57,37 +57,45 @@
         </p>
       </div>
     </div>
-    <div>
-      <form class="reserveForm">
-        <input
-          type="text"
-          id="Fullname"
-          class="inputForm"
-          placeholder="Full name"
-          required />
-        <input
-          type="number"
-          id="NumberPeople"
-          class="inputForm"
-          placeholder="Number of People"
-          max="20"
-          required />
-        <input
-          type="tel"
-          id="PhoneNumber"
-          class="inputForm"
-          placeholder="Phone Number"
-          required />
-        <input
-          type="datetime-local"
-          id="DateTime"
-          class="inputForm"
-          value="2022-06-01T20:30"
-          min="1997-01-01"
-          max="2030-12-31"
-          required />
-        <input id="btn" type="submit" value="BOOK A TABLE" />
-      </form>
+    <div class="reserveForm">
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Booking Succesfull! We will contact you soon!</p>
+        </div>
+      </div>
+      <div id="myModalnothing" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close2" onclick="close()">&times;</span>
+          <p>Please Fill All field</p>
+        </div>
+      </div>
+      <input
+        type="text"
+        id="Fullname"
+        class="inputForm"
+        pattern="^[a-zA-Z]+$"
+        placeholder="Full name" />
+      <input
+        type="number"
+        id="NumberPeople"
+        class="inputForm"
+        placeholder="Number of People" />
+      <input
+        type="tel"
+        id="PhoneNumber"
+        class="inputForm"
+        placeholder="Phone Number" />
+      <input
+        type="datetime-local"
+        id="DateTime"
+        class="inputForm"
+        value="2022-06-01T20:30"
+        min="1997-01-01"
+        max="2030-12-31" />
+      <button id="btn" onclick="bookingNoti()">BOOK A TABLE</button>
     </div>
 
     <!-- FOOTER -->

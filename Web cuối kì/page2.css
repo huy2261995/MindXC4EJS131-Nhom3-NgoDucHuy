@@ -259,6 +259,7 @@ body {
   width: 80vh;
   align-self: center;
   font-size: 1.5rem;
+  line-height: 2rem;
   color: aliceblue;
 }
 .intro-content-row {
@@ -278,6 +279,7 @@ body {
   margin-bottom: 100px;
   box-sizing: border-box;
   padding: 30px;
+  line-height: 2rem;
 }
 .border {
   border-width: 10px;

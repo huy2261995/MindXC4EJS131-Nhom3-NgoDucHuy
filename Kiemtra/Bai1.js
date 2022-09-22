@@ -1,5 +1,4 @@
 function soNguyenTo() {
-  let check = true;
   let a = document.getElementById("a").value;
   let b = document.getElementById("b").value;
 

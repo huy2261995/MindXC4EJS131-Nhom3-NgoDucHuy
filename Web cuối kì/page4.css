@@ -166,35 +166,154 @@ body {
   text-decoration: none;
   color: blanchedalmond;
 }
-.info {
-  display: flex;
-  justify-content: center;
+/*page1*/
+* {
+  box-sizing: border-box;
 }
-.info-text {
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.image-page1 {
+  width: 100%;
+  height: 100%;
+}
+/* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+  display: none;
+}
+/* thiết kế nút mũi tên*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* tạo hiệu ứng chuyển động fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.flexContainer-page2 {
   display: flex;
-  color: azure;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  height: 50%;
+}
+.menu-unChoose {
+  width: fit-content;
+  height: fit-content;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  border-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 2%;
+  margin-right: 1%;
   font-size: 1.5rem;
-  width: 30vw;
-  justify-content: center;
-  flex-direction: column;
+}
+.menu-unChoose:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.menu-choose {
+  width: fit-content;
+  height: fit-content;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  background-color: white;
+  border-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 1%;
+  font-size: 1.5rem;
+}
+.table-page2 {
+  border-style: double;
+  border-color: white;
+  box-sizing: border-box;
+  height: fit-content;
+  color: white;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+  margin-left: 13%;
+  margin-right: 10%;
+  margin-bottom: 10%;
   line-height: 2rem;
+  font-size: 1.5rem;
 }
-.imgshow {
-  color: azure;
-  display: flex;
-  justify-content: center;
+.menuTab-page2 {
+  display: none;
 }
-.row {
-  display: flex;
-}
-.pic {
-  margin: 5px;
-}
-.videoFrame {
-  width: 100vw;
-  height: 120vh;
-  top: 0px;
-  left: 0px;
+h3 {
+  color: rgb(48, 172, 48);
 }
