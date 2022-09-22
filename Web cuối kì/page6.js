@@ -55,10 +55,6 @@ span2.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
-  }
-};
-window.onclick = function (event) {
-  if (event.target == modalnothing) {
     modalnothing.style.display = "none";
   }
 };
