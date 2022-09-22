@@ -282,12 +282,19 @@ body {
   display: flex;
   justify-content: center;
 }
-.pageimg {
+.pageMap {
   width: 100%;
   height: 100vh;
-  margin-top: 100px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  color: azure;
+  font-size: 1.5rem;
 }
+
 /* .page3 {
   margin-top: 5%;
   background-color: red;
