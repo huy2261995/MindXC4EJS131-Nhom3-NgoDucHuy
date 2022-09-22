@@ -256,8 +256,6 @@ body {
   align-items: center;
   margin-top: 5%;
   box-sizing: border-box;
-  margin-left: 5%;
-  margin-right: 5%;
   font-size: 1.5rem;
 }
 .paragraph-page2 {
@@ -268,7 +266,8 @@ body {
   color: white;
   text-align: center;
   line-height: 2rem;
-  margin-right: 5%;
+  margin: auto;
+  font-size: 1.5rem;
 }
 .contact-page2 {
   color: white;
@@ -279,6 +278,8 @@ body {
 .image-page2 {
   box-sizing: border-box;
   height: auto;
+  display: flex;
+  justify-content: center;
 }
 .page3 {
   margin-top: 5%;
