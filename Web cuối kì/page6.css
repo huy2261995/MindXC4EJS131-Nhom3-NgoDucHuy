@@ -96,6 +96,7 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 13px;
   text-underline-position: above;
+  font-weight: 800;
 }
 
 .items-menu-header.isActive:hover {

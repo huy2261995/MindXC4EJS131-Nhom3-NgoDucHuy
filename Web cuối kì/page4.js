@@ -1,10 +1,11 @@
-//slide show page 1
 //cac function khi loadpage
-function loadFunc(){
-  display1();
+function loadFunc() {
   showSlides();
-  }
-const autoPlay=setInterval(nextSlides,3000);
+  display1();
+  pause.style.display = "block";
+  play.style.display = "none";
+}
+let autoPlay = setInterval(nextSlides, 3000);
 var slideIndex = 1;
 showSlides(slideIndex);
 function nextSlides() {
@@ -14,8 +15,8 @@ function prevSlides() {
   showSlides((slideIndex += -1));
 }
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -27,7 +28,22 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
-//slide text page 2
+//chay play
+let play = document.querySelector("#play");
+play.addEventListener("click", playAuto);
+function playAuto() {
+  autoPlay = setInterval(nextSlides, 3000);
+  pause.style.display = "block";
+  play.style.display = "none";
+}
+//chay pause
+let pause = document.querySelector("#pause");
+pause.addEventListener("click", pauseAuto);
+function pauseAuto() {
+  clearInterval(autoPlay);
+  pause.style.display = "none";
+  play.style.display = "block";
+} //slide text page 2
 let txtPage2 = document.querySelectorAll(".menuTab-page2");
 let another = document.querySelectorAll(".menu-unChoose");
 let butt1 = document.querySelector("#butt1");

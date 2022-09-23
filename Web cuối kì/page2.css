@@ -96,6 +96,7 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 13px;
   text-underline-position: above;
+  font-weight: 800;
 }
 
 .items-menu-header.isActive:hover {
@@ -197,7 +198,8 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-.play-auto{
+
+.play-auto {
   cursor: pointer;
   position: absolute;
   top: 90%;
@@ -212,6 +214,12 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+.play-auto:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+}
+
 /* thiết kế nút mũi tên next nằm phía bên phải */
 .next {
   right: 0;
@@ -223,8 +231,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
-/* thiết lập style  nút tròn điều khiển*/
-.active,
+
 /* tạo hiệu ứng chuyển động fade */
 .fade {
   -webkit-animation-name: fade;

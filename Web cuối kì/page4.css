@@ -96,6 +96,7 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 13px;
   text-underline-position: above;
+  font-weight: 800;
 }
 
 .items-menu-header.isActive:hover {
@@ -200,6 +201,26 @@ body {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+.play-auto {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.play-auto:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
 }
 /* thiết kế nút mũi tên next nằm phía bên phải */
 .next {
