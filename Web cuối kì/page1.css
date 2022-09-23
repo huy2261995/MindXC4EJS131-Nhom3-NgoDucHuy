@@ -181,6 +181,7 @@ body {
   justify-content: center;
   flex-direction: column;
   line-height: 2rem;
+  justify-content: center;
 }
 .imgshow {
   color: azure;
