@@ -250,14 +250,19 @@ body {
   height: 10%;
   font-size: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
-  float: right;
+  /* float: right; */
   font-size: 50px;
   font-weight: bold;
+  align-self: center;
 }
 
 .close:hover,
@@ -268,9 +273,10 @@ body {
 }
 .close2 {
   color: #aaaaaa;
-  float: right;
+  /* float: right; */
   font-size: 50px;
   font-weight: bold;
+  align-self: center;
 }
 
 .close2:hover,
@@ -278,4 +284,7 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.modaltext {
+  align-self: center;
 }
