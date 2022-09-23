@@ -282,11 +282,13 @@ body {
   box-sizing: border-box;
   padding: 30px;
   line-height: 2rem;
-}
-.border {
   border-width: 10px;
   border-style: double;
 }
+/* .border {
+  border-width: 10px;
+  border-style: double;
+} */
 .image-content-row {
   width: 50%;
   height: 50vh;
