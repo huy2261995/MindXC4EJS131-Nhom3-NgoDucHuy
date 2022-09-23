@@ -1,11 +1,17 @@
 //slide show page 1
-let slideIndex = 1;
+//cac function khi loadpage
+function loadFunc(){
+  display1();
+  showSlides();
+  }
+const autoPlay=setInterval(nextSlides,3000);
+var slideIndex = 1;
 showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function nextSlides() {
+  showSlides((slideIndex += 1));
 }
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function prevSlides() {
+  showSlides((slideIndex += -1));
 }
 function showSlides(n) {
   let i;
@@ -205,8 +211,4 @@ function display14() {
       another[i].className = "menu-unChoose";
     }
   }
-}
-//load page thi ve menu1
-function loadFunc() {
-  display1();
 }

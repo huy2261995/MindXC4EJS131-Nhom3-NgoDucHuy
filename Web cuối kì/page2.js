@@ -1,10 +1,17 @@
+//cac function khi loadpage
+function loadFunc(){
+  showSlides();
+  pause.style.display='block';
+  play.style.display='none';
+  };
+let autoPlay=setInterval(nextSlides,3000);
 var slideIndex = 1;
 showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function nextSlides() {
+  showSlides((slideIndex += 1));
 }
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function prevSlides() {
+  showSlides((slideIndex += -1));
 }
 function showSlides(n) {
   var i;
@@ -19,9 +26,20 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+};
+//chay play
+let play=document.querySelector('#play');
+play.addEventListener('click',playAuto);
+function playAuto(){
+  autoPlay=setInterval(nextSlides,3000);
+  pause.style.display='block';
+  play.style.display='none';
+};
+//chay pause
+let pause=document.querySelector('#pause');
+pause.addEventListener('click',pauseAuto);
+function pauseAuto(){
+  clearInterval(autoPlay);
+  pause.style.display='none';
+  play.style.display='block';
+};
